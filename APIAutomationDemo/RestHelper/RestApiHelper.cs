@@ -92,8 +92,7 @@ namespace APIAutomationDemo.RestHelper
 
         public IRestResponse GetResponse()
         {
-            return _restClient.Execute(_restRequest);
-            
+            return _restClient.Execute(_restRequest);          
         }
 
         public static IRestResponse GetResponseContent()
@@ -118,14 +117,6 @@ namespace APIAutomationDemo.RestHelper
         {
             return restClient.Execute(restRequest);
         }
-
-        //public GetContent(IRestResponse response)
-        //{
-        //    var content = response.Content;
-        //    deserializeObject = Newtonsoft.Json.JsonConvert.DeserializeObject(content);
-        //    return deserializeObject;
-        //}
-
 
     }
 }
