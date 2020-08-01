@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Google.Protobuf;
+using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Serialization.Json;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Mime;
 using System.Text;
+using System.Web.Helpers;
 
 namespace APIAutomationDemo.RestHelper
 {
@@ -95,21 +97,12 @@ namespace APIAutomationDemo.RestHelper
             return _restClient.Execute(_restRequest);          
         }
 
-        public static IRestResponse GetResponseContent()
+        public ListOfUsersDTO GetResponseContent()
         {
-            var _restResponse = _restClient.Execute(_restRequest);
-
-            var deserialize = new JsonDeserializer();
-            dynamic output = deserialize.Deserialize<Dictionary<string, string>>(_restResponse);
-            return output;
-        }
-
-        public ListOfUsersDTO GetResponseContents()
-        {
-            IRestResponse _restResponse = _restClient.Execute(_restRequest);
+            IRestResponse _restResponse = _restClient.Execute<List<ListOfUsersDTO>>(_restRequest);
             _restRequest.RequestFormat = DataFormat.Json;
             var contents = _restResponse.Content;
-            var  users = JsonConvert.DeserializeObject<ListOfUsersDTO>(contents);
+            dynamic  users = JsonConvert.DeserializeObject<ListOfUsersDTO>(contents);
             return users;
         }
 

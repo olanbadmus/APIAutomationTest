@@ -105,8 +105,14 @@ C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Deb
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.csprojAssemblyReference.cache
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.AssemblyInfoInputs.cache
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.AssemblyInfo.cs
-C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.csproj.CoreCompileInputs.cache
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.csproj.CopyComplete
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.dll
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.pdb
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.genruntimeconfig.cache
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.csproj.CoreCompileInputs.cache

@@ -119,7 +119,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Michael",
                             "Lawson"});
 #line 8
- testRunner.Then("I should get the following response contents", ((string)(null)), table1, "Then ");
+ testRunner.Then("I should get the following response contents for id 7", ((string)(null)), table1, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -171,7 +171,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Lindsay",
                             "Ferguson"});
 #line 16
- testRunner.Then("I should get the following response contents", ((string)(null)), table2, "Then ");
+ testRunner.Then("I should get the following response contents for id 8", ((string)(null)), table2, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -223,7 +223,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Tobias",
                             "Funke"});
 #line 25
- testRunner.Then("I should get the following response contents", ((string)(null)), table3, "Then ");
+ testRunner.Then("I should get the following response contents for id 9", ((string)(null)), table3, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -272,10 +272,10 @@ this.ScenarioInitialize(scenarioInfo);
                 table4.AddRow(new string[] {
                             "10",
                             "byron.fields@reqres.in",
-                            "George",
+                            "Byron",
                             "Fields"});
 #line 34
- testRunner.Then("I should get the following response contents", ((string)(null)), table4, "Then ");
+ testRunner.Then("I should get the following response contents for id 10", ((string)(null)), table4, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -324,10 +324,10 @@ this.ScenarioInitialize(scenarioInfo);
                 table5.AddRow(new string[] {
                             "11",
                             "george.edwards@reqres.in",
-                            "Michael",
+                            "George",
                             "Edwards"});
 #line 43
- testRunner.Then("I should get the following response contents", ((string)(null)), table5, "Then ");
+ testRunner.Then("I should get the following response contents for id 11", ((string)(null)), table5, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -379,7 +379,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Rachel",
                             "Howell"});
 #line 52
- testRunner.Then("I should get the following response contents", ((string)(null)), table6, "Then ");
+ testRunner.Then("I should get the following response contents for id 12", ((string)(null)), table6, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
