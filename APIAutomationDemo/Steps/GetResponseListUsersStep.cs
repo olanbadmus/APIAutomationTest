@@ -55,7 +55,5 @@ namespace APIAutomationDemo.Steps
             StringAssert.AreEqualIgnoringCase(responseUri, response.ResponseUri.ToString());
         }
 
-
-
     }
 }
