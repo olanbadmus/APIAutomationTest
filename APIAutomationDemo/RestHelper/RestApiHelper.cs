@@ -106,9 +106,13 @@ namespace APIAutomationDemo.RestHelper
             return users;
         }
 
-        public static IRestResponse GetResponce2(RestClient restClient, RestRequest restRequest)
+        public dynamic GetResponseContentForUsers()
         {
-            return restClient.Execute(restRequest);
+            IRestResponse _restResponse = _restClient.Execute(_restRequest);
+            //_restRequest.RequestFormat = DataFormat.Json;
+            var contents = _restResponse.Content;
+            dynamic users = JsonConvert.DeserializeObject(contents);
+            return users;
         }
 
     }

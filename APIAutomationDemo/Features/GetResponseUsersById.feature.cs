@@ -20,22 +20,22 @@ namespace APIAutomationDemo.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("GetResponseValidation")]
-    public partial class GetResponseValidationFeature
+    [NUnit.Framework.DescriptionAttribute("GetResponseUsersById")]
+    public partial class GetResponseUsersByIdFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "GetResponseValidation.feature"
+#line 1 "GetResponseUsersById.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetResponseValidation", "\tThis is to validate the Json response for GET request", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetResponseUsersById", "\tThis is to validate the Json response for GET request for users by ID", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,14 +74,14 @@ namespace APIAutomationDemo.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Response Content for id 7")]
+        [NUnit.Framework.DescriptionAttribute("Get Response for user 1")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateResponseContentForId7()
+        public virtual void GetResponseForUser1()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Content for id 7", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Response for user 1", null, tagsOfScenario, argumentsOfScenario);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -106,35 +106,41 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am on reqres url and on \"/api/users\" endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.When("I make a GET request on resource page \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I make a GET request on resource id \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "id",
                             "email",
                             "first_name",
-                            "last_name"});
-                table6.AddRow(new string[] {
-                            "7",
-                            "michael.lawson@reqres.in",
-                            "Michael",
-                            "Lawson"});
+                            "last_name",
+                            "company",
+                            "url",
+                            "text"});
+                table1.AddRow(new string[] {
+                            "1",
+                            "george.bluth@reqres.in",
+                            "George",
+                            "Bluth",
+                            "StatusCode Weekly",
+                            "http://statuscode.org/",
+                            "A weekly newsletter"});
 #line 8
- testRunner.Then("I should get the following response contents for id 7", ((string)(null)), table6, "Then ");
+ testRunner.Then("I should get the following response for user id 1", ((string)(null)), table1, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Response Content for id 8")]
+        [NUnit.Framework.DescriptionAttribute("Get Response for user 2")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateResponseContentForId8()
+        public virtual void GetResponseForUser2()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Content for id 8", null, tagsOfScenario, argumentsOfScenario);
-#line 13
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Response for user 2", null, tagsOfScenario, argumentsOfScenario);
+#line 14
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -154,38 +160,44 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 14
+#line 15
  testRunner.Given("I am on reqres url and on \"/api/users\" endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 15
- testRunner.When("I make a GET request on resource page \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 16
+ testRunner.When("I make a GET request on resource id \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "id",
                             "email",
                             "first_name",
-                            "last_name"});
-                table7.AddRow(new string[] {
-                            "8",
-                            "lindsay.ferguson@reqres.in",
-                            "Lindsay",
-                            "Ferguson"});
-#line 16
- testRunner.Then("I should get the following response contents for id 8", ((string)(null)), table7, "Then ");
+                            "last_name",
+                            "company",
+                            "url",
+                            "text"});
+                table2.AddRow(new string[] {
+                            "2",
+                            "janet.weaver@reqres.in",
+                            "Janet",
+                            "Weaver",
+                            "StatusCode Weekly",
+                            "http://statuscode.org/",
+                            "A weekly newsletter"});
+#line 17
+ testRunner.Then("I should get the following response for user id 2", ((string)(null)), table2, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Response Content for id 9")]
+        [NUnit.Framework.DescriptionAttribute("Get Response for user 3")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateResponseContentForId9()
+        public virtual void GetResponseForUser3()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Content for id 9", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Response for user 3", null, tagsOfScenario, argumentsOfScenario);
 #line 22
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -210,34 +222,40 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am on reqres url and on \"/api/users\" endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 24
- testRunner.When("I make a GET request on resource page \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I make a GET request on resource id \"3\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "id",
                             "email",
                             "first_name",
-                            "last_name"});
-                table8.AddRow(new string[] {
-                            "9",
-                            "tobias.funke@reqres.in",
-                            "Tobias",
-                            "Funke"});
+                            "last_name",
+                            "company",
+                            "url",
+                            "text"});
+                table3.AddRow(new string[] {
+                            "3",
+                            "emma.wong@reqres.in",
+                            "Emma",
+                            "Wong",
+                            "StatusCode Weekly",
+                            "http://statuscode.org/",
+                            "A weekly newsletter"});
 #line 25
- testRunner.Then("I should get the following response contents for id 9", ((string)(null)), table8, "Then ");
+ testRunner.Then("I should get the following response for user id 3", ((string)(null)), table3, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Response Content for id 10")]
+        [NUnit.Framework.DescriptionAttribute("Get Response for user 4")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateResponseContentForId10()
+        public virtual void GetResponseForUser4()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Content for id 10", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Response for user 4", null, tagsOfScenario, argumentsOfScenario);
 #line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -262,34 +280,40 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am on reqres url and on \"/api/users\" endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 33
- testRunner.When("I make a GET request on resource page \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I make a GET request on resource id \"4\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "id",
                             "email",
                             "first_name",
-                            "last_name"});
-                table9.AddRow(new string[] {
-                            "10",
-                            "byron.fields@reqres.in",
-                            "Byron",
-                            "Fields"});
+                            "last_name",
+                            "company",
+                            "url",
+                            "text"});
+                table4.AddRow(new string[] {
+                            "4",
+                            "eve.holt@reqres.in",
+                            "Eve",
+                            "Holt",
+                            "StatusCode Weekly",
+                            "http://statuscode.org/",
+                            "A weekly newsletter"});
 #line 34
- testRunner.Then("I should get the following response contents for id 10", ((string)(null)), table9, "Then ");
+ testRunner.Then("I should get the following response for user id 4", ((string)(null)), table4, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Response Content for id 11")]
+        [NUnit.Framework.DescriptionAttribute("Get Response for user 5")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateResponseContentForId11()
+        public virtual void GetResponseForUser5()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Content for id 11", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Response for user 5", null, tagsOfScenario, argumentsOfScenario);
 #line 40
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -314,72 +338,26 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am on reqres url and on \"/api/users\" endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 42
- testRunner.When("I make a GET request on resource page \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I make a GET request on resource id \"5\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "id",
                             "email",
                             "first_name",
-                            "last_name"});
-                table10.AddRow(new string[] {
-                            "11",
-                            "george.edwards@reqres.in",
-                            "George",
-                            "Edwards"});
+                            "last_name",
+                            "company",
+                            "url",
+                            "text"});
+                table5.AddRow(new string[] {
+                            "5",
+                            "charles.morris@reqres.in",
+                            "Charles",
+                            "Morris",
+                            "StatusCode Weekly",
+                            "http://statuscode.org/",
+                            "A weekly newsletter"});
 #line 43
- testRunner.Then("I should get the following response contents for id 11", ((string)(null)), table10, "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate Response Content for id 12")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void ValidateResponseContentForId12()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "mytag"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Content for id 12", null, tagsOfScenario, argumentsOfScenario);
-#line 49
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 50
- testRunner.Given("I am on reqres url and on \"/api/users\" endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 51
- testRunner.When("I make a GET request on resource page \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
-                            "id",
-                            "email",
-                            "first_name",
-                            "last_name"});
-                table11.AddRow(new string[] {
-                            "12",
-                            "rachel.howell@reqres.in",
-                            "Rachel",
-                            "Howell"});
-#line 52
- testRunner.Then("I should get the following response contents for id 12", ((string)(null)), table11, "Then ");
+ testRunner.Then("I should get the following response for user id 5", ((string)(null)), table5, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

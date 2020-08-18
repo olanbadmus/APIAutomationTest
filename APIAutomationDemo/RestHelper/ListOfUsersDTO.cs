@@ -12,24 +12,28 @@ namespace APIAutomationDemo.RestHelper
             public long Total { get; set; }
             public long TotalPages { get; set; }
             public List<Data> Data { get; set; }
-            public Ad Ad { get; set; }
+            //public Ad Ad { get; set; }
         }
 
-        public partial class Ad
-        {
-            public string Company { get; set; }
-            public Uri Url { get; set; }
-            public string Text { get; set; }
-        }
+        //public partial class Ad
+        //{
+        //    public string company { get; set; }
+        //    public Uri url { get; set; }
+        //    public string text { get; set; }
+        //}
 
-        public partial class Data
+
+    public partial class Data
         {
             public long id { get; set; }
             public string email { get; set; }
             public string first_name { get; set; }
             public string last_name { get; set; }
             public Uri avatar { get; set; }
-        }
+            public string company { get; set; }
+            public string url { get; set; }
+            public string text { get; set; }
+    }
         
         public class CreatUserInfo
         {

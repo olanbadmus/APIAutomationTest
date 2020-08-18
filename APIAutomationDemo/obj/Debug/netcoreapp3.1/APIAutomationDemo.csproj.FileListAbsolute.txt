@@ -115,3 +115,4 @@ C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Deb
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.dll
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.pdb
 C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.genruntimeconfig.cache
+C:\Users\olanrewajubadmus\Automation\APIAutomationDemo\APIAutomationDemo\obj\Debug\netcoreapp3.1\APIAutomationDemo.csprojAssemblyReference.cache
